@@ -66,7 +66,7 @@ public:
     }
     //Nhan 2 so lon
     SoLon operator*(SoLon other) {
-        SoLon result(0);;
+        SoLon result(0);
         SoLon temp = *this;
         for (int i = 0; i < other.arr.get_size(); i++) {
             result = result + (temp * other.arr[i] * pow(10, i));
