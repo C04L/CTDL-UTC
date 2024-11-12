@@ -13,7 +13,7 @@ private:
     float diem2;
     float diem3;
     float diemthi;
-    float diemtongket;
+    float diemtongket = (diemthi + (diem1 + diem2 + diem3)) / 3 / 2;
     friend istream& operator>> (istream& is, SinhVien& sv){
         cout << "Nhap ma sinh vien...\n";
         is >> sv.masv;
