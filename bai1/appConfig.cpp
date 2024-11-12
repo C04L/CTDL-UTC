@@ -158,7 +158,7 @@ public:
         system("cls");
         cout << "================LUU Y!!!!======================\n";
         cout << "File txt nhap vao phai co dinh dang sau: \n";
-        cout << "Masinhvien \nTensinhvien\ndiem1 diem2 diem3\n";
+        cout << "Masinhvien \nTensinhvien\ndiem1 diem2 diem3 diemthi\n";
         cout << "===============================================\n";
         system("pause");
         system("cls");
