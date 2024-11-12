@@ -7,13 +7,10 @@
 #include "MyVector.cpp"
 #include <iostream>
 class SoLon {
-    long long solon;
     MyVector<int> arr;
 public:
 
-    SoLon() {
-        solon = 0;
-    }
+    SoLon() {}
     SoLon(int number) {
         int temp = number;
         if (temp < 10) {
