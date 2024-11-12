@@ -66,7 +66,7 @@ public:
     }
     //Nhan 2 so lon
     SoLon operator*(SoLon other) {
-        SoLon result(0);
+        SoLon result(0);;
         SoLon temp = *this;
         for (int i = 0; i < other.arr.get_size(); i++) {
             result = result + (temp * other.arr[i] * pow(10, i));
@@ -124,7 +124,7 @@ public:
             return true;
         }
         if (temp.arr.get_size() == temp2.arr.get_size()) {
-            for (int i = 0; i < temp.arr.get_size(); i++) {
+            for (int i = temp.arr.get_size() - 1; i >= 0; i--) {
                 if (temp.arr[i] < temp2.arr[i]) {
                     return true;
                 }
@@ -139,7 +139,7 @@ public:
             return true;
         }
         if (temp.arr.get_size() == temp2.arr.get_size()) {
-            for (int i = 0; i < temp.arr.get_size(); i++) {
+            for (int i = temp.arr.get_size() - 1; i >= 0; i--) {
                 if (temp.arr[i] > temp2.arr[i]) {
                     return true;
                 }
